@@ -15,7 +15,6 @@ import { Observable } from 'rxjs';
 export class CreateItemComponent implements OnInit {
 
   createForm!: FormGroup;
-  showMsg: boolean = false;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -33,7 +32,6 @@ export class CreateItemComponent implements OnInit {
   add() {    
     return this.api.addImage(this.createForm.value).subscribe((x) => {   
       this.createForm.reset;
-      this.showMsg = true;
       this.router.navigateByUrl('/photos');
     });
   }
