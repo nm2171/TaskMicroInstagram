@@ -1,0 +1,33 @@
+.card {
+    margin: 25px auto;
+    width: 75%;
+}
+
+img {
+    width: 96%;
+    height: 98%;
+    margin: 2% 2% 0 2%;
+}
+
+button {
+    width: 120px;
+}
+
+.card-body {
+    margin: 5px 20px;
+}
+
+.row {
+    margin-top: 15px;
+}
+
+.confirm {
+    width: 25%;
+    height: 120px;
+    padding: 10px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

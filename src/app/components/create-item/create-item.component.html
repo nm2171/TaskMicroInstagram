@@ -1,0 +1,18 @@
+<form [formGroup]="createForm" (ngSubmit)="add()">
+    <h1>Add New Image</h1>
+    <div class="col">
+        <label for="title" class="form-label">Title: </label>
+        <input type="text" class="form-control" placeholder="Enter title" name="title" formControlName="title">
+    </div>
+    <div class="col">
+        <label for="url" class="form-label">Image URL: </label>
+        <input type="text" class="form-control" placeholder="Enter the URL of the image" name="url" formControlName="url">
+    </div>
+    <div class="col">
+        <label for="thumbnailUrl" class="form-label">Thumbnail URL: </label>
+        <input type="text" class="form-control" placeholder="Enter the thumbnail URL" name="thumbnailUrl" formControlName="thumbnailUrl">
+    </div>
+    <br>
+    <button class="btn btn-primary" type="submit" [disabled]="!createForm.valid">Submit</button>
+   
+</form>

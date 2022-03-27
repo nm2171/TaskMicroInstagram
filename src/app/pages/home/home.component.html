@@ -1,0 +1,16 @@
+<div class="container">
+    
+    <div class="row">
+        <div *ngFor="let image of data | paginate: { itemsPerPage: 20, currentPage: pageNum }" class="col-3" [routerLink]="['/photos', image.id]">
+            <div class="card">
+                <img class="card-img-top" [src]="image.thumbnailUrl" [alt]="image.title">
+                <div class="card-body">
+                    <div class="card-title text-truncate"> {{ image.title }}</div>
+                </div>
+            </div>
+        </div>       
+
+        <pagination-controls (pageChange)="pageNum = $event"></pagination-controls>
+
+    </div>
+</div>

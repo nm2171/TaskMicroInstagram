@@ -1,0 +1,14 @@
+nav {
+    height: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+span {
+    padding: 10px 0;
+    margin-left: -5px;
+}
+
+button {
+    padding: 10px 0;
+}
